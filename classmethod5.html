@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            height: 300px;
+            width: 300px;
+            background-color: red;
+        }
+
+        .box1 {
+            height: 200px;
+            width: 600px;
+            background-color: rgb(217, 255, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box" id="data"> </div>
+    <button id="add">add class</button>
+    <button id="rem">remove class</button>
+    <button id="tog">toggle class</button>
+
+    <script src="cdn/jquery-3.7.0.js"></script>
+    <script src="cdn/jquery-3.7.0.min.js"></script>
+    <script src="cdn/jquery-3.7.0.slim.min.js"></script>
+    <script src="cdn/jquery-3.7.0.min.map"></script>
+    <script>
+        $(document).ready(function(){
+            $('#add').click(function(){
+                $('#data').addClass('box1')
+            })
+            $('#rem').click(function(){
+                $('#data').removeClass('box1')
+            })
+            $('#tog').click(function(){
+                $('#data').toggle('box1')
+            })
+        })
+    </script>
+
+</body>
+
+</html>

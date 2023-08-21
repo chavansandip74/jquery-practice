@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        .scrollt{
+            background-color: yellow;
+            position: absolute;
+            bottom: 0px;
+            left: 50px;
+            height: 100px;
+            width: 100px;
+
+        }
+        .scrolll{
+            background-color: rebeccapurple;
+            position: absolute;
+            bottom: 0px;
+            left: 150px;
+            height: 100px;
+            width: 100px;
+        }
+        body{
+            background-image: linear-gradient(to right bottom,red,yellow,blue);
+            height: 2000px;
+            width: 2000px;
+        }
+        
+    </style>
+</head>
+<body>
+ 
+    <button class="scrollt"> wscrollt</button>
+    <button class="scrolll"> uscrolll</button>
+    
+    <script src="cdn/jquery-3.7.0.js"></script>
+    <script src="cdn/jquery-3.7.0.min.js"></script>
+    <script src="cdn/jquery-3.7.0.slim.min.js"></script>
+    <script src="cdn/jquery-3.7.0.min.map"></script>
+    <script>
+        $(document).ready(function(){
+            $('.scrollt').click(function(){
+                $(window).scrollTop(0);
+            })
+            $('.scrolll').click(function(){
+                $(window).scrollLeft(0);
+            })
+               
+            })
+    
+    </script>
+</body>
+</html>

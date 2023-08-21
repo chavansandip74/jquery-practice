@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="bd" style="height: 1000px; width: 2000px;">
+    <script src="cdn/jquery-3.7.0.js"></script>
+    <script src="cdn/jquery-3.7.0.min.js"></script>
+    <script src="cdn/jquery-3.7.0.slim.min.js"></script>
+    <script src="cdn/jquery-3.7.0.min.map"></script>
+    <div class="abc" style="background-color: red; width: 100%; height: 200px;">
+    <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto facilis nostrum omnis laudantium numquam possimus deleniti laboriosam deserunt dolore repellendus.</p>
+</div>
+    <form action="">
+        enter name:
+        <input type="text" class="name"><br><br>
+        email:
+        <input type="email" name="email" class="email"><br><br>
+        mobile:
+        <input type="number" name="" class="num"><br><br>
+        <select name="" id="cge">
+            <option value="">abc</option>
+            <option value="">abc</option>
+            <option value="">abc</option>
+            <option value="">abc</option>
+        </select><br><br>
+        <button>submit</button>
+    </form>
+
+    <script>
+        //mouse event
+        $(document).ready(function(){
+            $('p').click(function(){
+                alert("click")
+            });
+            $('.abc').mouseover(function(){
+                $('.abc').css('background','orange')
+            })
+            $('.abc').mouseout(function(){
+                $('.abc').css('background','blue')
+            })
+            $('.abc').mouseup(function(){
+                $('.abc').css('background','yellow')
+            })
+            $('.abc').click(function(){
+                $('.abc').css('background','green')
+            })
+            $('.abc').dblclick(function(){
+                $('.abc').css('background','pink')
+            })
+            $('.abc').contextmenu(function(){
+                $('.abc').css('background','white')
+            })
+
+            //keybord event
+
+            // $('body').keypress(function(){
+            //     $('body').css('background','orange')
+            // })
+            // $('body').keyup(function(){
+            //     $('body').css('background','red')
+            // })
+            // $('body').keydown(function(){
+            //     $('body').css('background','green')
+            // })
+            
+            //form event
+
+            $('input').focus(function(){
+                $(this).css('background','green')
+            })
+            
+            $('input').blur(function(){
+                $(this).css('background','red')
+            })
+            $('input').select(function(){
+                $(this).css('background','orange')
+            })
+            $('#cge').change(function(){
+                $(this).css('background','yellow')
+            })
+
+            //window event
+
+            $(window).resize(function(){
+                alert("resize");
+            })
+            $(window).scroll(function(){
+                alert("scroll")
+            })
+        });
+    </script>
+ 
+</body>
+</html>

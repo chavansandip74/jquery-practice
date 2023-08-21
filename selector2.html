@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>welcom1</p>
+    <p>welcom2</p>
+    <p>welcom3</p>
+    <p class="abc">welcom4</p>
+    <p id="abc">welcom5</p>
+    <p>welcom6</p>
+    <script src="cdn/jquery-3.7.0.js"></script>
+    <script src="cdn/jquery-3.7.0.min.js"></script>
+    <script src="cdn/jquery-3.7.0.slim.min.js"></script>
+    <script src="cdn/jquery-3.7.0.min.map"></script>
+    <script>
+        $(document).ready(function(){
+          $('p').click(function(){
+            $(this).css('color','red');
+          });
+          $('#abc').click(function(){
+            $("#abc").css('color','blue')
+          })
+          $('.abc').click(function(){
+            $(".abc").css('background','green')
+          })
+        });
+    </script>
+    
+</body>
+</html>

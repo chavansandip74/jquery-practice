@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: yellow;
+        }
+        .box2{
+            background-color: rebeccapurple;
+            margin: 30px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box box1" id="abc">
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa hic nulla, blanditiis vel odit amet reprehenderit laudantium? Sed, et labore?</p>
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum eius modi non, dolorum mollitia dicta? Tempora dolor impedit odio accusamus ratione nesciunt dicta! Suscipit dolor perferendis, quae soluta ea velit!</p>
+ <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi dignissimos repudiandae soluta nobis quibusdam reiciendis saepe recusandae vitae vel magnam maiores fuga, odit numquam nostrum rerum ad expedita possimus tempore?</p>
+
+    </div>
+    <button id="rap"> wrep</button>
+    <button id="unrap"> unwrep</button>
+    <button id="rapall"> wrepall</button>
+    <button id="rapi"> wrepinner</button>
+    <script src="cdn/jquery-3.7.0.js"></script>
+    <script src="cdn/jquery-3.7.0.min.js"></script>
+    <script src="cdn/jquery-3.7.0.slim.min.js"></script>
+    <script src="cdn/jquery-3.7.0.min.map"></script>
+    <script>
+        $(document).ready(function(){
+        //    var a=$('#abc').hasClass('box1');
+        //    if(a){
+        //     alert('available')
+        //    }
+        //    else{
+        //     alert('not avilable')
+        //    }
+            
+        //     })
+        var a=$('#abc p').last().hasClass('box1');
+        var a=$('#abc p').first().hasClass('box');
+           if(a){
+            alert('available')
+           }
+           else{
+            alert('not avilable')
+           }
+            
+            })
+    
+    </script>
+</body>
+</html>

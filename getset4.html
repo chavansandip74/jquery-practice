@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+          height: 300px;
+          width: 300px;
+          background-color: red;
+        }
+        .box1{
+            height: 600px;
+          width: 600px;
+          background-color: rgb(217, 255, 0);
+        }
+    </style>
+</head>
+<body>
+    <p class="dat demo da">welcome <b>jquery</b></p><br>
+    <input type="text" class="input" value="value o f input"><br>
+    <button class="txt">text</button>
+    <button class="ht">html</button>
+    <button class="attr">attr</button>
+    <button class="vl">invl</button>
+    <h1 class="data">welcome <mark>jquery</mark></h1>
+    <button class="txt">text</button>
+    <button class="tht">html</button>
+    <h1 class="data1">past data</h1>
+<div class="box box1 box2" id="data">
+    <button class="atr">attr</button>
+</div>
+
+    <script src="cdn/jquery-3.7.0.js"></script>
+    <script src="cdn/jquery-3.7.0.min.js"></script>
+    <script src="cdn/jquery-3.7.0.slim.min.js"></script>
+    <script src="cdn/jquery-3.7.0.min.map"></script>
+    <script>
+        $(document).ready(function(){
+          //get method
+          
+          $('.txt').click(function(){
+            var da=$('.data').text();
+          alert(da)
+          })
+          $(".ht").click(function(){
+            var da=$('.data').html();
+          alert(da)
+          })
+          $(".attr").click(function(){
+            var da=$('.data').attr('class');
+          alert(da)
+          })
+          $(".vl").click(function(){
+            var da=$('.input').val();
+          alert(da)
+          })
+
+           
+          //set method
+               $('.txt').click(function(){
+                var da=$('.data').text();
+                $('.data1').text(da)
+               })
+               $('.tht').click(function(){
+                var aa=$('.data').html();
+                $('.data1').html(aa)
+               })
+            
+
+            //attr
+            $('.atr').click(function(){
+                $('#data').attr('class','box');
+            })
+        })
+    </script>
+    
+</body>
+</html>

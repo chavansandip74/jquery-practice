@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="data">
+        <h1>welcome html</h1>
+        <h1>welcome class</h1>
+        <h1>welcomejs</h1>
+        <h1>welcome bs</h1>
+    </div>
+    <button id="rwith"> replcewith</button>
+    <button id="rall"> replceall</button>
+    <script src="cdn/jquery-3.7.0.js"></script>
+    <script src="cdn/jquery-3.7.0.min.js"></script>
+    <script src="cdn/jquery-3.7.0.slim.min.js"></script>
+    <script src="cdn/jquery-3.7.0.min.map"></script>
+    <script>
+        $(document).ready(function(){
+        $('#rwith').click(function(){
+            $('.data h1:nth-child(2)').replaceWith('<span>rep</span>')
+        })
+    })
+        $('#rall').click(function(){
+        $('<mark>replace all</mark>').replaceAll('.data h1:nth-child(4)')
+        })
+  
+    </script>
+</body>
+</html>
